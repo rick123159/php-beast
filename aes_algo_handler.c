@@ -9,10 +9,13 @@
 #include "beast_module.h"
 #include "aes_algo_lib.c"
 
-static uint8_t key[] = {
+/*static uint8_t key[] = {
 	0x2b, 0x7e, 0x15, 0x16, 0x28, 0xae, 0xd2, 0xa6,
 	0xab, 0xf7, 0x15, 0x88, 0x09, 0xcf, 0x4f, 0x3c,
-};
+};*/
+
+extern uint8_t beast_aes_key_data[]; 
+#define key beast_aes_key_data
 
 int aes_encrypt_handler(char *inbuf, int len,
 	char **outbuf, int *outlen)

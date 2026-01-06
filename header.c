@@ -1,4 +1,3 @@
-
 /*
  * You can modify this sign to disguise your encrypt file
  */
@@ -8,3 +7,19 @@ char encrypt_file_header_sign[] = {
 };
 
 int encrypt_file_header_length = sizeof(encrypt_file_header_sign);
+
+/*
+ * aes_key
+ */
+uint8_t beast_aes_key_data[] = {
+    0x2b, 0x7e, 0x15, 0x16, 0x28, 0xae, 0xd2, 0xa6,
+    0xab, 0xf7, 0x15, 0x88, 0x09, 0xcf, 0x4f, 0x3c
+};
+
+/*
+ * des_key
+ */
+
+char beast_des_key_data[8] = {
+    0x01, 0x1f, 0x01, 0x1f, 0x01, 0x0e, 0x01, 0x0e
+};

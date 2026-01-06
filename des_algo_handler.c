@@ -10,11 +10,13 @@
 #include "des_algo_lib.c"
 
 
-static char key[8] = {
+/*static char key[8] = {
     0x01, 0x1f, 0x01, 0x1f,
     0x01, 0x0e, 0x01, 0x0e,
-};
+};*/
 
+extern char beast_des_key_data[];
+#define key beast_des_key_data
 
 int des_encrypt_handler(char *inbuf, int len,
 	char **outbuf, int *outlen)
