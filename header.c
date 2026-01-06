@@ -1,3 +1,4 @@
+#include <stdint.h>
 /*
  * You can modify this sign to disguise your encrypt file
  */
